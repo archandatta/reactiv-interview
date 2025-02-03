@@ -5,6 +5,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import configOne from '../assets/configurations/config-one.json';
+import ConfigProvider from '@/components/config/ConfigProvider';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -26,10 +28,12 @@ export default function RootLayout() {
 
 	return (
 		<ThemeProvider value={DefaultTheme}>
-			<Stack>
-				<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-			</Stack>
-			<StatusBar style="auto" />
+			<ConfigProvider value={configOne}>
+				<Stack>
+					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+				</Stack>
+				<StatusBar style="auto" />
+			</ConfigProvider>
 		</ThemeProvider>
 	);
 }
