@@ -1,0 +1,22 @@
+{
+	"carousel": {
+		"images": [
+			"https://example.com/image1.jpg",
+			"https://example.com/image2.jpg",
+			"https://example.com/image3.jpg"
+		],
+		"display": "portrait"
+	},
+	"textArea": {
+		"title": "Welcome to Our App",
+		"description": "This is the home screen of our app.",
+		"titleColor": "#FF5733",
+		"descriptionColor": "#333333"
+	},
+	"callToAction": {
+		"label": "Get Started",
+		"link": "https://example.com/start",
+		"buttonColor": "#007BFF",
+		"labelColor": "#FFFFFF"
+	}
+}
