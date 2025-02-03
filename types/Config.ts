@@ -1,4 +1,4 @@
-interface Carousel {
+export interface ImageCarouselType {
 	images: string[];
 	display: string;
 }
@@ -18,7 +18,7 @@ interface CallToAction {
 }
 
 export interface Config {
-	carousel: Carousel;
+	carousel: ImageCarouselType;
 	textArea: TextArea;
 	callToAction: CallToAction;
 }

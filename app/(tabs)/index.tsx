@@ -1,14 +1,13 @@
-import { ConfigContext } from '@/components/config/ConfigContext';
-import React, { useContext } from 'react';
-import { Text } from 'react-native';
+import ImageCarousel from '@/components/ui/ImageCarousel';
+import { useConfig } from '@/hooks/useConfig';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
-	const config = useContext(ConfigContext);
+	const config = useConfig();
 
 	return (
 		<SafeAreaView>
-			<Text>{config?.textArea.title}</Text>
+			<ImageCarousel data={config?.carousel} />
 		</SafeAreaView>
 	);
 };
