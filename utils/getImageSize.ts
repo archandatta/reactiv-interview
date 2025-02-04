@@ -1,10 +1,12 @@
+import { ImageDisplay } from '@/types/Config';
+
 export const getImageAspectRatio = (mode: string) => {
 	switch (mode) {
-		case 'landscape':
+		case ImageDisplay.landscape:
 			return 16 / 8;
-		case 'portrait':
+		case ImageDisplay.portrait:
 			return 9 / 16;
-		case 'square':
+		case ImageDisplay.square:
 		default:
 			return 1 / 1;
 	}

@@ -1,4 +1,4 @@
-import { ImageCarouselType } from '@/types/Config';
+import { ImageCarouselType, ImageDisplay } from '@/types/Config';
 import { getImageAspectRatio } from '@/utils/getImageSize';
 import { Image } from 'expo-image';
 import { useRef } from 'react';
@@ -18,8 +18,8 @@ const RenderImage = ({ display, src }: { display: string; src: string }) => {
 				style={{
 					...styles.image,
 					aspectRatio: getImageAspectRatio(display),
+					height: display === ImageDisplay.portrait ? '100%' : undefined,
 				}}
-				contentFit={'cover'}
 				source={src}
 			/>
 		</View>
@@ -41,7 +41,7 @@ interface IImageCarouselProps
 const ImageCarousel = ({
 	data,
 	width = WINDOW_WIDTH,
-	height = WINDOW_WIDTH / 2,
+	height = 500,
 	mode,
 	modeConfig,
 	vertical,
@@ -55,11 +55,11 @@ const ImageCarousel = ({
 			ref={ref}
 			width={width}
 			height={height}
-			autoPlay={false}
 			data={data.images}
 			renderItem={({ item }: { item: string }) => (
 				<RenderImage key={item} display={data.display} src={item} />
 			)}
+			style={{ backgroundColor: 'black' }}
 		/>
 	);
 };
@@ -67,11 +67,11 @@ const ImageCarousel = ({
 const styles = StyleSheet.create({
 	imageContainer: {
 		flex: 1,
+		justifyContent: 'center',
 		alignItems: 'center',
 	},
 	image: {
 		width: '100%',
-		height: '100%',
 	},
 });
 

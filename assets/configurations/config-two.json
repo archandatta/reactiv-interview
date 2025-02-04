@@ -8,8 +8,8 @@
 		"display": "portrait"
 	},
 	"textArea": {
-		"title": "Welcome to Our App",
-		"description": "This is the home screen of our app.",
+		"title": "Welcome to App",
+		"description": "This is  of our app.",
 		"titleColor": "#FF5733",
 		"descriptionColor": "#333333"
 	},

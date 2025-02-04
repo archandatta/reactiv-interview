@@ -9,8 +9,8 @@ const HomeScreen = () => {
 
 	return (
 		<SafeAreaView style={{ gap: 16 }}>
-			<ImageCarousel data={config.carousel} />
 			<TextArea data={config.textArea} />
+			<ImageCarousel data={config.carousel} />
 			<CallToAction data={config.callToAction} />
 		</SafeAreaView>
 	);

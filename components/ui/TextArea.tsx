@@ -1,5 +1,5 @@
 import { ITextArea } from '@/types/Config';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 const TextArea = ({
 	data: { title, titleColor, description, descriptionColor },
@@ -7,11 +7,27 @@ const TextArea = ({
 	data: ITextArea;
 }) => {
 	return (
-		<View style={{ marginTop: 0 }}>
-			<Text style={{ color: titleColor }}>{title}</Text>
-			<Text style={{ color: descriptionColor }}>{description}</Text>
+		<View style={styles.container}>
+			<Text
+				style={{ ...styles.title, color: titleColor }}
+				allowFontScaling={true}
+			>
+				{title}
+			</Text>
+			<Text
+				style={{ ...styles.description, color: descriptionColor }}
+				allowFontScaling={true}
+			>
+				{description}
+			</Text>
 		</View>
 	);
 };
+
+const styles = StyleSheet.create({
+	container: { gap: 4, margin: 16 },
+	title: { fontSize: 28, fontWeight: 600 },
+	description: { fontSize: 18 },
+});
 
 export default TextArea;
