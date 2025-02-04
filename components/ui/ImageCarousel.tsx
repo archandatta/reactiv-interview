@@ -19,6 +19,7 @@ const RenderImage = ({ display, src }: { display: string; src: string }) => {
 					...styles.image,
 					aspectRatio: getImageAspectRatio(display),
 				}}
+				contentFit={'cover'}
 				source={src}
 			/>
 		</View>
@@ -65,11 +66,11 @@ const ImageCarousel = ({
 const styles = StyleSheet.create({
 	imageContainer: {
 		flex: 1,
+		alignItems: 'center',
 	},
 	image: {
 		width: '100%',
 		height: '100%',
-		resizeMode: 'cover',
 	},
 });
 
