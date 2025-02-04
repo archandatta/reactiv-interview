@@ -1,10 +1,12 @@
 import { ImageCarouselType } from '@/types/Config';
 import { getImageAspectRatio } from '@/utils/getImageSize';
 import { Image } from 'expo-image';
+import { useRef } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 import Carousel, {
 	TCarouselProps,
 	ILayoutConfig,
+	ICarouselInstance,
 } from 'react-native-reanimated-carousel';
 
 const WINDOW_WIDTH = Dimensions.get('window').width;
@@ -44,34 +46,25 @@ const ImageCarousel = ({
 	vertical,
 	...props
 }: IImageCarouselProps) => {
+	const ref = useRef<ICarouselInstance>(null);
+
 	return (
-		<View style={styles.container}>
-			<Carousel
-				{...props}
-				mode={mode}
-				vertical={vertical}
-				modeConfig={modeConfig}
-				width={width}
-				height={height}
-				autoPlay={false}
-				data={data.images}
-				renderItem={({ item }: { item: string }) => (
-					<RenderImage display={data.display} src={item} />
-				)}
-			/>
-		</View>
+		<Carousel
+			ref={ref}
+			width={width}
+			height={height}
+			autoPlay={false}
+			data={data.images}
+			renderItem={({ item }: { item: string }) => (
+				<RenderImage key={item} display={data.display} src={item} />
+			)}
+		/>
 	);
 };
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
 	imageContainer: {
 		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: 'transparent',
 	},
 	image: {
 		width: '100%',

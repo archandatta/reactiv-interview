@@ -3,7 +3,7 @@ export interface ImageCarouselType {
 	display: string;
 }
 
-interface TextArea {
+export interface ITextArea {
 	title: string;
 	description: string;
 	titleColor: string;
@@ -19,6 +19,6 @@ interface CallToAction {
 
 export interface Config {
 	carousel: ImageCarouselType;
-	textArea: TextArea;
+	textArea: ITextArea;
 	callToAction: CallToAction;
 }
