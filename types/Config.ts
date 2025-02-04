@@ -6,7 +6,7 @@ export enum ImageDisplay {
 
 export type ImageCarouselType = {
 	images: string[];
-	display: ImageDisplay;
+	display: string;
 };
 
 export type ITextArea = {

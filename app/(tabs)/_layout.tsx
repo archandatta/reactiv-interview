@@ -25,6 +25,15 @@ export default function TabLayout() {
 					// ),
 				}}
 			/>
+			<Tabs.Screen
+				name="configurations"
+				options={{
+					title: 'Configurations',
+					// tabBarIcon: ({ color }) => (
+					// 	<Icon size={28} name="house.fill" color={color} />
+					// ),
+				}}
+			/>
 		</Tabs>
 	);
 }

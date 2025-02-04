@@ -5,7 +5,7 @@ import { useConfig } from '@/hooks/useConfig';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
-	const config = useConfig();
+	const { config } = useConfig();
 
 	return (
 		<SafeAreaView style={{ gap: 16 }}>

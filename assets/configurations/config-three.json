@@ -8,7 +8,7 @@
 		"display": "square"
 	},
 	"textArea": {
-		"title": "Welcome to Our App",
+		"title": " to Our App",
 		"description": "This is the home screen of our app.",
 		"titleColor": "#FF5733",
 		"descriptionColor": "#333333"
