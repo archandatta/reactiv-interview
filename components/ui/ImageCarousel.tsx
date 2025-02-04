@@ -51,6 +51,7 @@ const ImageCarousel = ({
 
 	return (
 		<Carousel
+			{...props}
 			ref={ref}
 			width={width}
 			height={height}

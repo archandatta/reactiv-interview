@@ -1,3 +1,4 @@
+import CallToAction from '@/components/ui/CallToAction';
 import ImageCarousel from '@/components/ui/ImageCarousel';
 import TextArea from '@/components/ui/TextArea';
 import { useConfig } from '@/hooks/useConfig';
@@ -10,7 +11,7 @@ const HomeScreen = () => {
 		<SafeAreaView style={{ gap: 16 }}>
 			<ImageCarousel data={config.carousel} />
 			<TextArea data={config.textArea} />
-			{/* // <Button title="test" /> */}
+			<CallToAction data={config.callToAction} />
 		</SafeAreaView>
 	);
 };

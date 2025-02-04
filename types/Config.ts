@@ -10,7 +10,7 @@ export interface ITextArea {
 	descriptionColor: string;
 }
 
-interface CallToAction {
+export interface ICallToAction {
 	label: string;
 	link: string;
 	buttonColor: string;
@@ -20,5 +20,5 @@ interface CallToAction {
 export interface Config {
 	carousel: ImageCarouselType;
 	textArea: ITextArea;
-	callToAction: CallToAction;
+	callToAction: ICallToAction;
 }
