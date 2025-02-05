@@ -33,6 +33,7 @@ const RenderImage = ({
 				source={src}
 				placeholder={'assets/images/adaptive-icon.png'}
 				accessibilityLabel={`carousel-image-${index}`}
+				testID={`carousel-image-${index}`}
 				allowDownscaling={true}
 			/>
 		</View>
@@ -83,7 +84,6 @@ const ImageCarousel = ({
 					/>
 				</View>
 			)}
-			style={{ backgroundColor: 'gray' }}
 		/>
 	);
 };

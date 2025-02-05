@@ -1,0 +1,24 @@
+// // __tests__/ImageCarousel.test.tsx
+
+// import React from 'react';
+// import { render } from '@testing-library/react-native';
+// import ImageCarousel from '../ui/ImageCarousel';
+// import { ImageDisplay } from '@/types/Config';
+
+// const configData = {
+// 	display: ImageDisplay.landscape,
+// 	images: ['https://example.com/image1.jpg', 'https://example.com/image2.jpg'],
+// };
+
+// describe('<ImageCarousel />', () => {
+// 	it('images render with correct accessibility labels', () => {
+// 		const { getByTestId } = render(
+// 			<ImageCarousel data={configData} width={400} height={300} />
+// 		);
+
+// 		const image0 = getByTestId('carousel-image-0');
+// 		const image1 = getByTestId('carousel-image-1');
+// 		expect(image0).toBeTruthy();
+// 		expect(image1).toBeTruthy();
+// 	});
+// });
