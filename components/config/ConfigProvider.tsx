@@ -1,5 +1,5 @@
 import { Config } from '@/types/Config';
-import { ConfigContext, ConfigContextType } from './ConfigContext';
+import { ConfigContext } from './ConfigContext';
 import { PropsWithChildren, useState } from 'react';
 
 interface IConfigProviderProps extends PropsWithChildren {

@@ -1,22 +1,22 @@
 {
 	"carousel": {
 		"images": [
-			"https://example.com/image1.jpg",
-			"https://example.com/image2.jpg",
-			"https://example.com/image3.jpg"
+			"https://www.vivobarefoot.com/media/catalog/product/3/0/309574-01_side.jpg?quality=100&bg-color=255,255,255&fit=bounds&height=1418&width=2520",
+			"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/5da8f473-5c2a-49b3-8531-e0192f9ff8e9/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
+			"https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw5a81500f/AW22/Footwear/SH_D1GA226501_00.png?sw=900&sh=900"
 		],
 		"display": "square"
 	},
 	"textArea": {
-		"title": " to Our App",
-		"description": "This is the home screen of our app.",
-		"titleColor": "#FF5733",
-		"descriptionColor": "#333333"
+		"title": "Shoe Store",
+		"description": "",
+		"titleColor": "#000000",
+		"descriptionColor": "#cf3057"
 	},
 	"callToAction": {
-		"label": "Get Started",
-		"link": "https://example.com/start",
-		"buttonColor": "#007BFF",
-		"labelColor": "#FFFFFF"
+		"label": "Visit Foot Locker",
+		"link": "https://www.footlocker.ca/",
+		"buttonColor": "#FFFFFF",
+		"labelColor": "#000000"
 	}
 }

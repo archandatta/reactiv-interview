@@ -20,7 +20,9 @@ const RenderImage = ({ display, src }: { display: string; src: string }) => {
 					aspectRatio: getImageAspectRatio(display),
 					height: display === ImageDisplay.portrait ? '100%' : undefined,
 				}}
+				contentFit={'cover'}
 				source={src}
+				placeholder={'assets/images/adaptive-icon.png'}
 			/>
 		</View>
 	);
@@ -55,11 +57,11 @@ const ImageCarousel = ({
 			ref={ref}
 			width={width}
 			height={height}
-			data={data.images}
+			data={data.images.filter((i) => i !== '')}
 			renderItem={({ item }: { item: string }) => (
 				<RenderImage key={item} display={data.display} src={item} />
 			)}
-			style={{ backgroundColor: 'black' }}
+			style={{ backgroundColor: 'gray' }}
 		/>
 	);
 };

@@ -1,22 +1,22 @@
 {
 	"carousel": {
 		"images": [
-			"https://example.com/image1.jpg",
-			"https://example.com/image2.jpg",
-			"https://example.com/image3.jpg"
+			"https://theoutfitters.nf.ca/cdn/shop/files/Beta-AR-Jacket-Black_4a683854-9494-4ba1-ae4f-92c6fbfdb0cf.jpg?v=1691692425&width=1350",
+			"https://www.mytheresa.com/media/1094/1238/100/f5/P00708836.jpg",
+			""
 		],
 		"display": "portrait"
 	},
 	"textArea": {
-		"title": "Welcome to App",
-		"description": "This is  of our app.",
+		"title": "Jacket Selection",
+		"description": "Selection of jackets that will ensure you stay warm and toasty",
 		"titleColor": "#FF5733",
-		"descriptionColor": "#333333"
+		"descriptionColor": "#172E92"
 	},
 	"callToAction": {
-		"label": "Get Started",
-		"link": "https://example.com/start",
-		"buttonColor": "#007BFF",
+		"label": "Buy Now",
+		"link": "https://www.decathlon.ca/en/c/22603/winter-jackets",
+		"buttonColor": "#E35B1C",
 		"labelColor": "#FFFFFF"
 	}
 }

@@ -1,22 +1,23 @@
 {
 	"carousel": {
 		"images": [
-			"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg",
-			"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg",
-			"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+			"https://www.scotlandinfo.eu/wp-content/uploads/2019/09/scottish-highlands-skye.jpg",
+			"https://www.walkaboutscotland.com/blog/wp-content/uploads/2020/02/bigstock-Stunning-View-Of-The-Loch-Ness-258216736-5.jpg",
+			"https://a.storyblok.com/f/53624/1365x918/f0886f3168/glenfinnan-viaduct-in-the-scottish-highlands-in-fall.jpg",
+			"https://th-thumbnailer.cdn-si-edu.com/PzyiFArC9jDw6YT14K1XS3f8ygI=/960x439/https://tf-cmsv2-journeys-media.s3.amazonaws.com/filer/15/35/15359de0-5067-4560-b94c-6cd13b57fa37/sct_highlands_eileandonancastle_dt_l_9451590.jpg"
 		],
 		"display": "landscape"
 	},
 	"textArea": {
-		"title": "Welcome to Our App",
-		"description": "This is the home screen of our app.",
-		"titleColor": "#FF5733",
-		"descriptionColor": "#333333"
+		"title": "The Highlands",
+		"description": "These are some pictures of the highlands.",
+		"titleColor": "#198331",
+		"descriptionColor": "#000000"
 	},
 	"callToAction": {
-		"label": "Get Started",
-		"link": "https://letsenhance.io",
-		"buttonColor": "#007BFF",
+		"label": "Learn More about Scottish Highlands",
+		"link": "https://en.wikipedia.org/wiki/Scottish_Highlands",
+		"buttonColor": "#83196B",
 		"labelColor": "#FFFFFF"
 	}
 }

@@ -14,12 +14,14 @@ const TextArea = ({
 			>
 				{title}
 			</Text>
-			<Text
-				style={{ ...styles.description, color: descriptionColor }}
-				allowFontScaling={true}
-			>
-				{description}
-			</Text>
+			{description && (
+				<Text
+					style={{ ...styles.description, color: descriptionColor }}
+					allowFontScaling={true}
+				>
+					{description}
+				</Text>
+			)}
 		</View>
 	);
 };
