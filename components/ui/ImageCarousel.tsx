@@ -11,7 +11,15 @@ import Carousel, {
 
 const WINDOW_WIDTH = Dimensions.get('window').width;
 
-const RenderImage = ({ display, src }: { display: string; src: string }) => {
+const RenderImage = ({
+	index,
+	display,
+	src,
+}: {
+	index: number;
+	display: string;
+	src: string;
+}) => {
 	return (
 		<View style={styles.imageContainer}>
 			<Image
@@ -23,6 +31,8 @@ const RenderImage = ({ display, src }: { display: string; src: string }) => {
 				contentFit={'cover'}
 				source={src}
 				placeholder={'assets/images/adaptive-icon.png'}
+				accessibilityLabel={`carousel-image-${index}`}
+				allowDownscaling={true}
 			/>
 		</View>
 	);
@@ -58,8 +68,13 @@ const ImageCarousel = ({
 			width={width}
 			height={height}
 			data={data.images.filter((i) => i !== '')}
-			renderItem={({ item }: { item: string }) => (
-				<RenderImage key={item} display={data.display} src={item} />
+			renderItem={({ index, item }: { index: number; item: string }) => (
+				<RenderImage
+					key={item}
+					index={index}
+					display={data.display}
+					src={item}
+				/>
 			)}
 			style={{ backgroundColor: 'gray' }}
 		/>

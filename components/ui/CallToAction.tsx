@@ -21,9 +21,16 @@ const CallToAction = ({
 			<Pressable
 				style={{ ...styles.pressable, backgroundColor: buttonColor }}
 				onPress={() => openURL(link)}
+				accessibilityLabel={label}
+				accessibilityRole={'button'}
 				{...props}
 			>
-				<Text style={{ color: labelColor, fontSize: 16 }}>{label}</Text>
+				<Text
+					style={{ color: labelColor, fontSize: 16 }}
+					allowFontScaling={true}
+				>
+					{label}
+				</Text>
 			</Pressable>
 		</View>
 	);

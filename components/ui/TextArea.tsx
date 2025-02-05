@@ -11,6 +11,8 @@ const TextArea = ({
 			<Text
 				style={{ ...styles.title, color: titleColor }}
 				allowFontScaling={true}
+				accessibilityLabel={title}
+				accessibilityRole={'header'}
 			>
 				{title}
 			</Text>
@@ -18,6 +20,8 @@ const TextArea = ({
 				<Text
 					style={{ ...styles.description, color: descriptionColor }}
 					allowFontScaling={true}
+					accessibilityLabel={description}
+					accessibilityRole={'header'}
 				>
 					{description}
 				</Text>
