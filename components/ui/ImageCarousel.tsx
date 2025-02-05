@@ -1,6 +1,7 @@
 import { ImageCarouselType, ImageDisplay } from '@/types/Config';
 import { getImageAspectRatio } from '@/utils/getImageSize';
 import { Image } from 'expo-image';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRef } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 import Carousel, {
@@ -69,12 +70,18 @@ const ImageCarousel = ({
 			height={height}
 			data={data.images.filter((i) => i !== '')}
 			renderItem={({ index, item }: { index: number; item: string }) => (
-				<RenderImage
-					key={item}
-					index={index}
-					display={data.display}
-					src={item}
-				/>
+				<View style={{ flex: 1 }}>
+					<LinearGradient
+						colors={['#ffffff', '#f4f4f4']}
+						style={styles.linearGradient}
+					/>
+					<RenderImage
+						key={item}
+						index={index}
+						display={data.display}
+						src={item}
+					/>
+				</View>
 			)}
 			style={{ backgroundColor: 'gray' }}
 		/>
@@ -90,6 +97,7 @@ const styles = StyleSheet.create({
 	image: {
 		width: '100%',
 	},
+	linearGradient: { position: 'absolute', width: '100%', height: '100%' },
 });
 
 export default ImageCarousel;

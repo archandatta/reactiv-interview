@@ -8,7 +8,7 @@ const HomeScreen = () => {
 	const { config } = useConfig();
 
 	return (
-		<SafeAreaView style={{ gap: 16 }}>
+		<SafeAreaView style={{ flex: 1, gap: 16, backgroundColor: 'white' }}>
 			<TextArea data={config.textArea} />
 			<ImageCarousel data={config.carousel} />
 			<CallToAction data={config.callToAction} />

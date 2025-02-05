@@ -16,7 +16,7 @@
 	"callToAction": {
 		"label": "Visit Foot Locker",
 		"link": "https://www.footlocker.ca/",
-		"buttonColor": "#FFFFFF",
+		"buttonColor": "#cccccc",
 		"labelColor": "#000000"
 	}
 }
