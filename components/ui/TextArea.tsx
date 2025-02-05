@@ -1,10 +1,10 @@
-import { ITextArea } from '@/types/Config';
+import { TextAreaType } from '@/types/Config';
 import { StyleSheet, Text, View } from 'react-native';
 
 const TextArea = ({
 	data: { title, titleColor, description, descriptionColor },
 }: {
-	data: ITextArea;
+	data: TextAreaType;
 }) => {
 	return (
 		<View style={styles.container}>

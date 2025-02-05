@@ -9,14 +9,14 @@ export type ImageCarouselType = {
 	display: string;
 };
 
-export type ITextArea = {
+export type TextAreaType = {
 	title: string;
 	description: string;
 	titleColor: string;
 	descriptionColor: string;
 };
 
-export type ICallToAction = {
+export type CallToActionType = {
 	label: string;
 	link: string;
 	buttonColor: string;
@@ -25,6 +25,6 @@ export type ICallToAction = {
 
 export interface Config {
 	carousel: ImageCarouselType;
-	textArea: ITextArea;
-	callToAction: ICallToAction;
+	textArea: TextAreaType;
+	callToAction: CallToActionType;
 }

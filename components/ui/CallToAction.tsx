@@ -1,4 +1,4 @@
-import { ICallToAction } from '@/types/Config';
+import { CallToActionType } from '@/types/Config';
 import { openURL } from 'expo-linking';
 import {
 	Pressable,
@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 interface ICallToActionProps extends PressableProps {
-	data: ICallToAction;
+	data: CallToActionType;
 }
 
 const CallToAction = ({

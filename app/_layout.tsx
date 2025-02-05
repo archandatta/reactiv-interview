@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 import configOne from '../assets/configurations/config-one.json';
 import ConfigProvider from '@/components/config/ConfigProvider';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -27,13 +28,15 @@ export default function RootLayout() {
 	}
 
 	return (
-		<ThemeProvider value={DefaultTheme}>
-			<ConfigProvider value={configOne}>
-				<Stack>
-					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-				</Stack>
-				<StatusBar style="auto" />
-			</ConfigProvider>
-		</ThemeProvider>
+		<GestureHandlerRootView>
+			<ThemeProvider value={DefaultTheme}>
+				<ConfigProvider value={configOne}>
+					<Stack>
+						<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+					</Stack>
+					<StatusBar style="auto" />
+				</ConfigProvider>
+			</ThemeProvider>
+		</GestureHandlerRootView>
 	);
 }

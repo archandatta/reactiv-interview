@@ -1,7 +1,12 @@
 import { ImageDisplay } from '@/types/Config';
 
-export const getImageAspectRatio = (mode: string) => {
-	switch (mode) {
+/**
+ * Gets aspect ratio given a display type
+ * @param display - The display type of the images
+ * @returns an aspect ratio correlating to the type
+ */
+export const getImageAspectRatio = (display: string) => {
+	switch (display) {
 		case ImageDisplay.landscape:
 			return 16 / 9;
 		case ImageDisplay.portrait:
